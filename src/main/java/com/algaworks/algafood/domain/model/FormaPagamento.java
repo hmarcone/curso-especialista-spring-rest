@@ -21,13 +21,5 @@ public class FormaPagamento {
 	
 	@Column(nullable = false)
 	private String descricao;
-
-	public Long getId() {
-		return id;
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
 	
 }
