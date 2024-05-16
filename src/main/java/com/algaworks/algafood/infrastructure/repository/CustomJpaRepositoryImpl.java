@@ -15,14 +15,13 @@ public CustomJpaRepositoryImpl(JpaEntityInformation<T, ?> entityInformation,
 	super(entityInformation, entityManager);
 }
 
-
 /*
  * @Override public Optional<T> buscarPrimeiro() { var jpql = "from " +
  * getDomainClass().getName();
  * 
- * T entity = manager.createQuery(jpql, getDomainClass())
- * .setMaxResults(1).getSingleResult();
+ * T entity = manager.createQuery(jpql, getDomainClass()) .setMaxResults(1)
+ * .getSingleResult();
  * 
  * return Optional.ofNullable(entity); }
- */ 
+ */
 }

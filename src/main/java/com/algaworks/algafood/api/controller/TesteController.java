@@ -42,7 +42,7 @@ public class TesteController {
 	/*
 	 * @GetMapping("/cozinhas/primeira") public Optional<Cozinha> cozinhaPrimeiro()
 	 * { return cozinhaRepository.buscarPrimeiro(); }
-	 */	
+	 */
 	
 	@GetMapping("/restaurantes/por-taxa-frete")
 	public List<Restaurante> restaurantesPorTaxaFrete(
@@ -55,6 +55,7 @@ public class TesteController {
 	 * restaurantesPorTaxaFrete( String nome, Long cozinhaId) { return
 	 * restauranteRepository.consultarPorNome(nome, cozinhaId); }
 	 */	
+	
 	@GetMapping("/restaurantes/primeiro-por-nome")
 	public Optional<Restaurante> restaurantePrimeiroPorNome(String nome) {
 		return restauranteRepository.findFirstRestauranteByNomeContaining(nome);
@@ -84,5 +85,4 @@ public class TesteController {
 	/*
 	 * @GetMapping("/restaurantes/primeiro") public Optional<Restaurante>
 	 * restaurantePrimeiro() { return restauranteRepository.buscarPrimeiro(); }
-	 */	
-}
+	 */}
